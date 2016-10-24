@@ -346,6 +346,36 @@ BOARD</text>
 <wire x1="-2.3" y1="-1.6" x2="-2.3" y2="0" width="0.2032" layer="21"/>
 <wire x1="2.3" y1="-1.6" x2="2.3" y2="0" width="0.2032" layer="21"/>
 </package>
+<package name="1X03_LOCK">
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 </packages>
 </library>
 <library name="Teensy_3_Series_Board_v1.0">
@@ -639,7 +669,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$10" library="tekdemo" package="NET-JUNCTION-2" value="NET-JUNCTION-2" x="76.962" y="17.78" rot="R270"/>
 <element name="U$11" library="tekdemo" package="NET-JUNCTION-2" value="NET-JUNCTION-2" x="78.486" y="17.78" rot="R270"/>
 <element name="U$13" library="tekdemo" package="NET-JUNCTION-2" value="NET-JUNCTION-2" x="20.828" y="43.688" rot="MR180"/>
-<element name="RLED" library="tekdemo" package="0402-0603-0805-UNIVERSAL" value="" x="19.558" y="35.814" rot="R90"/>
+<element name="RLED" library="tekdemo" package="0402-0603-0805-UNIVERSAL" value="" x="20.32" y="38.1"/>
 <element name="MLED" library="tekdemo" package="1X02_LOCK" value="M02LOCK" x="19.558" y="43.18" rot="R270"/>
 <element name="U$12" library="Teensy_3_Series_Board_v1.0" package="TEENSY_3.1_BASIC" value="TEENSY_3.1_BASIC" x="8.89" y="27.432" rot="R180"/>
 <element name="U$14" library="tekdemo" package="NET-JUNCTION-2" value="NET-JUNCTION-2" x="25.4" y="21.844" rot="MR0"/>
@@ -657,6 +687,11 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP1" library="tekdemo" package="JST-2-PTH" value="M02JST-PTH-2" x="74.676" y="13.462" rot="R270">
 <attribute name="SKU" value="PRT-09914" x="74.676" y="13.462" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
+<element name="JP2" library="tekdemo" package="1X03_LOCK" value="" x="26.67" y="25.4" rot="R180"/>
+<element name="JP3" library="tekdemo" package="1X03_LOCK" value="" x="26.67" y="35.56" rot="R180"/>
+<element name="JP4" library="tekdemo" package="1X03_LOCK" value="" x="26.67" y="33.02" rot="R180"/>
+<element name="JP5" library="tekdemo" package="1X03_LOCK" value="" x="26.67" y="30.48" rot="R180"/>
+<element name="JP6" library="tekdemo" package="1X03_LOCK" value="" x="26.67" y="27.94" rot="R180"/>
 </elements>
 <signals>
 <signal name="M1A">
@@ -892,6 +927,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="15.494" y1="10.922" x2="14.732" y2="11.684" width="0.508" layer="16"/>
 <wire x1="21.844" y1="16.51" x2="19.558" y2="14.478" width="0.508" layer="16"/>
 <wire x1="19.558" y1="14.478" x2="19.558" y2="13.716" width="0.508" layer="16"/>
+<contactref element="JP6" pad="1"/>
+<contactref element="JP5" pad="1"/>
+<contactref element="JP4" pad="1"/>
+<contactref element="JP3" pad="1"/>
+<contactref element="JP2" pad="1"/>
 <wire x1="14.224" y1="10.668" x2="14.478" y2="10.668" width="0" layer="19" extent="1-1"/>
 <wire x1="15.494" y1="10.922" x2="14.478" y2="10.668" width="0" layer="19" extent="1-16"/>
 <wire x1="8.89" y1="43.942" x2="20.828" y2="43.688" width="0" layer="19" extent="16-16"/>
@@ -1392,9 +1432,21 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$12" pad="AGND"/>
 </signal>
 <signal name="3.3V">
-<contactref element="U$12" pad="3.3V1"/>
+<contactref element="JP6" pad="2"/>
+<contactref element="JP5" pad="2"/>
+<contactref element="JP4" pad="2"/>
+<contactref element="JP3" pad="2"/>
+<contactref element="JP2" pad="2"/>
+<wire x1="5.08" y1="19.812" x2="18.669" y2="19.812" width="0.508" layer="1"/>
+<wire x1="18.669" y1="19.812" x2="24.13" y2="25.527" width="0.508" layer="1"/>
+<wire x1="24.13" y1="25.527" x2="24.13" y2="28.067" width="0.508" layer="1"/>
+<wire x1="24.13" y1="28.067" x2="24.13" y2="30.607" width="0.508" layer="1"/>
+<wire x1="24.13" y1="30.607" x2="24.13" y2="33.147" width="0.508" layer="1"/>
+<wire x1="24.13" y1="33.147" x2="24.13" y2="35.687" width="0.508" layer="1"/>
 <contactref element="U$12" pad="3.3V"/>
-<wire x1="1.27" y1="16.002" x2="11.43" y2="43.942" width="0" layer="19" extent="1-1"/>
+<contactref element="U$12" pad="3.3V1"/>
+<wire x1="1.27" y1="16.002" x2="5.08" y2="19.812" width="0.508" layer="1"/>
+<wire x1="24.13" y1="35.687" x2="11.43" y2="43.942" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="T3/PWM" class="1">
 <contactref element="U$12" pad="3"/>
@@ -1441,8 +1493,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="5.588" y1="16.764" x2="15.24" y2="16.764" width="0.254" layer="16"/>
 <wire x1="15.24" y1="16.764" x2="15.494" y2="17.018" width="0.254" layer="16"/>
 <wire x1="15.494" y1="17.018" x2="17.78" y2="17.018" width="0.1524" layer="16"/>
-<wire x1="17.78" y1="17.018" x2="18.796" y2="17.78" width="0.254" layer="16"/>
-<wire x1="18.796" y1="17.78" x2="25.4" y2="17.78" width="0.254" layer="16"/>
+<wire x1="17.78" y1="17.018" x2="18.542" y2="17.78" width="0.254" layer="16"/>
+<wire x1="18.542" y1="17.78" x2="25.4" y2="17.78" width="0.254" layer="16"/>
 <contactref element="U$22" pad="P$1"/>
 </signal>
 <signal name="T23/PWM" class="1">
@@ -1455,13 +1507,17 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="T19/A5" class="1">
 <contactref element="U$12" pad="19/A5"/>
-<wire x1="1.27" y1="28.702" x2="4.572" y2="25.4" width="0.254" layer="1"/>
-<wire x1="4.572" y1="25.4" x2="7.62" y2="25.4" width="0.254" layer="1"/>
+<wire x1="1.27" y1="28.702" x2="7.62" y2="22.352" width="0.254" layer="1"/>
+<wire x1="7.62" y1="22.352" x2="18.669" y2="22.352" width="0.254" layer="1"/>
+<contactref element="JP2" pad="3"/>
+<wire x1="18.669" y1="22.352" x2="21.59" y2="25.273" width="0.254" layer="1"/>
 </signal>
 <signal name="T18/A4" class="1">
 <contactref element="U$12" pad="18/A4"/>
-<wire x1="1.27" y1="31.242" x2="5.842" y2="26.67" width="0.254" layer="1"/>
-<wire x1="5.842" y1="26.67" x2="7.62" y2="26.67" width="0.254" layer="1"/>
+<wire x1="1.27" y1="31.242" x2="7.62" y2="24.892" width="0.254" layer="1"/>
+<wire x1="7.62" y1="24.892" x2="18.669" y2="24.892" width="0.254" layer="1"/>
+<contactref element="JP6" pad="3"/>
+<wire x1="18.669" y1="24.892" x2="21.59" y2="27.813" width="0.254" layer="1"/>
 </signal>
 <signal name="T4/PWM" class="1">
 <contactref element="U$12" pad="4"/>
@@ -1476,32 +1532,40 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="7.112" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="16"/>
 <wire x1="15.24" y1="17.78" x2="15.494" y2="17.526" width="0.254" layer="16"/>
 <wire x1="15.494" y1="17.526" x2="17.526" y2="17.526" width="0.1524" layer="16"/>
-<wire x1="17.526" y1="17.526" x2="18.542" y2="18.288" width="0.254" layer="16"/>
-<wire x1="18.542" y1="18.288" x2="25.4" y2="18.288" width="0.254" layer="16"/>
+<wire x1="17.526" y1="17.526" x2="18.288" y2="18.288" width="0.254" layer="16"/>
+<wire x1="18.288" y1="18.288" x2="25.4" y2="18.288" width="0.254" layer="16"/>
 <contactref element="U$21" pad="P$1"/>
 </signal>
 <signal name="T17/A3" class="1">
 <contactref element="U$12" pad="17/A3"/>
-<wire x1="1.27" y1="33.782" x2="6.35" y2="28.702" width="0.254" layer="1"/>
-<wire x1="6.35" y1="28.702" x2="7.874" y2="28.702" width="0.254" layer="1"/>
+<wire x1="1.27" y1="33.782" x2="7.62" y2="27.432" width="0.254" layer="1"/>
+<wire x1="7.62" y1="27.432" x2="18.669" y2="27.432" width="0.254" layer="1"/>
+<contactref element="JP5" pad="3"/>
+<wire x1="18.669" y1="27.432" x2="21.59" y2="30.353" width="0.254" layer="1"/>
 </signal>
 <signal name="T16/A2" class="1">
 <contactref element="U$12" pad="16/A2"/>
-<wire x1="1.27" y1="36.322" x2="7.112" y2="30.48" width="0.254" layer="1"/>
+<wire x1="1.27" y1="36.322" x2="7.62" y2="29.972" width="0.254" layer="1"/>
+<wire x1="7.62" y1="29.972" x2="18.669" y2="29.972" width="0.254" layer="1"/>
+<contactref element="JP4" pad="3"/>
+<wire x1="18.669" y1="29.972" x2="21.59" y2="32.893" width="0.254" layer="1"/>
 </signal>
 <signal name="T15/A1" class="1">
 <contactref element="U$12" pad="15/A1"/>
-<wire x1="1.27" y1="38.862" x2="7.112" y2="33.02" width="0.254" layer="1"/>
+<wire x1="1.27" y1="38.862" x2="7.62" y2="32.512" width="0.254" layer="1"/>
+<wire x1="7.62" y1="32.512" x2="18.669" y2="32.512" width="0.254" layer="1"/>
+<contactref element="JP3" pad="3"/>
+<wire x1="18.669" y1="32.512" x2="21.59" y2="35.433" width="0.254" layer="1"/>
 </signal>
 <signal name="T14/A0" class="1">
 <contactref element="U$12" pad="14/A0"/>
-<wire x1="1.27" y1="41.402" x2="7.112" y2="35.56" width="0.254" layer="1"/>
 </signal>
 <signal name="T13/LED" class="1">
 <contactref element="U$12" pad="13"/>
 <contactref element="RLED" pad="+"/>
-<wire x1="1.27" y1="43.942" x2="10.16" y2="35.052" width="0.254" layer="1"/>
-<wire x1="10.16" y1="35.052" x2="19.558" y2="35.052" width="0.254" layer="1"/>
+<wire x1="1.27" y1="43.942" x2="7.62" y2="37.592" width="0.254" layer="1"/>
+<wire x1="7.62" y1="37.592" x2="18.034" y2="37.592" width="0.254" layer="1"/>
+<wire x1="18.034" y1="37.592" x2="19.558" y2="38.1" width="0.254" layer="1"/>
 </signal>
 <signal name="T6/PWM" class="1">
 <contactref element="U$16" pad="P$1"/>
@@ -1514,7 +1578,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$1" class="1">
 <contactref element="MLED" pad="2"/>
 <contactref element="RLED" pad="-"/>
-<wire x1="19.558" y1="36.576" x2="19.558" y2="40.4622" width="0.254" layer="1"/>
+<wire x1="21.082" y1="38.1" x2="19.558" y2="40.4622" width="0.254" layer="1"/>
 </signal>
 <signal name="GND_LED" class="1">
 <contactref element="U$13" pad="P$2"/>
