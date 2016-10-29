@@ -2238,6 +2238,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="A2" library="tekdemo" deviceset="M03" device="LOCK"/>
 <part name="A3" library="tekdemo" deviceset="M03" device="LOCK"/>
 <part name="A4" library="tekdemo" deviceset="M03" device="LOCK"/>
+<part name="JP2" library="tekdemo" deviceset="M02" device="LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -2251,7 +2252,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-30.48" y1="-27.94" x2="-30.48" y2="76.2" width="0.2032" layer="94" style="longdash"/>
 <wire x1="-30.48" y1="76.2" x2="-132.08" y2="76.2" width="0.2032" layer="94" style="longdash"/>
 <text x="-132.08" y="78.74" size="1.778" layer="94">INPUT POWER</text>
-<text x="-124.46" y="50.8" size="1.778" layer="94" align="top-left">Note: During standard operation (with the controller),
+<text x="-124.46" y="38.1" size="1.778" layer="94" align="top-left">Note: During standard operation (with the controller),
 the batteries are used in a -3V/0V/+3V configuration 
 </text>
 <text x="-124.46" y="-22.86" size="1.778" layer="91">Alternatively, 2S LiPO batteries can be used, providing 6-8.2 V</text>
@@ -2354,6 +2355,7 @@ attached to reduce resistance if needed.</text>
 <instance part="A2" gate="G$1" x="-116.84" y="-190.5"/>
 <instance part="A3" gate="G$1" x="-116.84" y="-205.74"/>
 <instance part="A4" gate="G$1" x="-116.84" y="-220.98"/>
+<instance part="JP2" gate="G$1" x="-121.92" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -2424,6 +2426,11 @@ attached to reduce resistance if needed.</text>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 <wire x1="-35.56" y1="33.02" x2="-40.64" y2="33.02" width="0.2032" layer="91"/>
 <label x="-40.64" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="-114.3" y1="45.72" x2="-88.9" y2="45.72" width="0.2032" layer="91"/>
+<label x="-88.9" y="45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -2499,6 +2506,11 @@ attached to reduce resistance if needed.</text>
 <pinref part="U$13" gate="G$1" pin="P$2"/>
 <pinref part="LED" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="111.76" x2="48.26" y2="111.76" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="-114.3" y1="43.18" x2="-88.9" y2="43.18" width="0.2032" layer="91"/>
+<label x="-88.9" y="43.18" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VIN_M1" class="1">
