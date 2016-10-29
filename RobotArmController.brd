@@ -8,8 +8,8 @@
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="5" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="11" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="11" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -40,7 +40,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -802,7 +802,6 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$10" library="tekdemo" package="NET-JUNCTION-2" value="NET-JUNCTION-2" x="77.47" y="17.526" rot="R270"/>
 <element name="U$11" library="tekdemo" package="NET-JUNCTION-2" value="NET-JUNCTION-2" x="78.994" y="17.526" rot="R270"/>
 <element name="U$13" library="tekdemo" package="NET-JUNCTION-2" value="NET-JUNCTION-2" x="27.94" y="45.212" rot="MR180"/>
-<element name="RLED" library="tekdemo" package="0402-0603-0805-UNIVERSAL" value="" x="18.288" y="41.402" rot="R270"/>
 <element name="LED" library="tekdemo" package="1X02_LOCK" value="M02LOCK" x="28.448" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.2768" y="44.5262" size="1.27" layer="25" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="25.273" y="44.45" size="1.27" layer="27" rot="R270"/>
@@ -1763,10 +1762,12 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="T13/LED" class="1">
 <contactref element="TEENSY" pad="13"/>
-<contactref element="RLED" pad="+"/>
 <wire x1="0" y1="43.942" x2="1.524" y2="42.672" width="0.254" layer="1"/>
-<wire x1="1.524" y1="42.672" x2="18.288" y2="42.672" width="0.254" layer="1"/>
-<wire x1="18.288" y1="42.672" x2="18.288" y2="42.164" width="0.254" layer="1"/>
+<wire x1="1.524" y1="42.672" x2="16.764" y2="42.672" width="0.254" layer="1"/>
+<contactref element="LED" pad="2"/>
+<wire x1="16.764" y1="42.672" x2="21.844" y2="37.592" width="0.254" layer="1"/>
+<wire x1="21.844" y1="37.592" x2="25.5778" y2="37.592" width="0.254" layer="1"/>
+<wire x1="25.5778" y1="37.592" x2="28.448" y2="40.4622" width="0.254" layer="1"/>
 </signal>
 <signal name="T6/PWM" class="1">
 <contactref element="U$16" pad="P$1"/>
@@ -1775,13 +1776,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.526" y1="26.416" x2="17.526" y2="21.082" width="0.254" layer="16"/>
 <wire x1="17.78" y1="20.828" x2="25.908" y2="20.828" width="0.254" layer="16"/>
 <wire x1="17.78" y1="20.828" x2="17.526" y2="21.082" width="0.254" layer="16"/>
-</signal>
-<signal name="N$1" class="1">
-<contactref element="LED" pad="2"/>
-<contactref element="RLED" pad="-"/>
-<wire x1="18.288" y1="40.64" x2="22.606" y2="38.1" width="0.254" layer="1"/>
-<wire x1="22.606" y1="38.1" x2="25.908" y2="38.1" width="0.254" layer="1"/>
-<wire x1="25.908" y1="38.1" x2="28.448" y2="40.4622" width="0.254" layer="1"/>
 </signal>
 </signals>
 <errors>
